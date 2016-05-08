@@ -22,7 +22,7 @@ class TcpServer():
 				break
 			print("From connected user: " + data)
 			data = data.upper()
-			print("Sending: ", data)
+			print("Sending data in UPPER case to Client: ", data)
 			client.send(data.encode('utf-8'))
 		client.close()
 
